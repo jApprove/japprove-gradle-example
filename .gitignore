@@ -1,0 +1,18 @@
+# IntelliJ
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# Gradle
+.gradle
+build/
+out/
+
+# Misc
+*.orig
+*.log
+
+# Application text files
+toApprove.txt
+

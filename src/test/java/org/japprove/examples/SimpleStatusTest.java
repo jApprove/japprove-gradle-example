@@ -8,7 +8,7 @@ import org.japprove.verifier.JsonVerifier;
 public class SimpleStatusTest {
 
     @ApprovalTest(baseline = "status")
-    public void testGetState(JsonVerifier jsonVerifier) throws JsonProcessingException {
+    public void testGetStatus(JsonVerifier jsonVerifier) throws JsonProcessingException {
         JsonNode state = SimpleStatus.getStatus();
         jsonVerifier.ignore("timestamp").verify(state);
     }

@@ -1,6 +1,5 @@
 buildscript {
     repositories {
-        mavenLocal()
         mavenCentral()
     }
     dependencies {
@@ -15,7 +14,6 @@ apply plugin: 'approver-plugin'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 
@@ -23,6 +21,7 @@ dependencies {
     implementation("org.japprove:japprove-core:1.2.0")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.10.1")
     implementation("com.jayway.jsonpath:json-path:2.4.0")
+    implementation("org.json:json:20190722")
 }
 
 test {
